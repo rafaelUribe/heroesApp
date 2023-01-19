@@ -1,0 +1,19 @@
+<h3>
+    Listado de heroes
+</h3>
+<mat-divider
+
+></mat-divider>
+
+<br>
+
+<div 
+    class="display-flex"
+>
+    <app-heroe-tarjeta
+        *ngFor="let heroe of heroes"
+        [h]="heroe"
+    >
+    </app-heroe-tarjeta>
+</div>
+

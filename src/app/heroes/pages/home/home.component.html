@@ -1,0 +1,95 @@
+<mat-sidenav-container 
+    fullscreen
+    class=""
+>
+    <mat-sidenav 
+        #sidenav
+        mode="push"
+    >
+        <mat-toolbar>
+            <button 
+            mat-icon-button
+            (click)="sidenav.toggle()"
+            >
+                <mat-icon>menu</mat-icon>
+            </button>
+
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <mat-list-item
+                (click)="sidenav.toggle()"
+            >
+                <button mat-icon-button
+                    matListItemMeta
+                >
+                   <mat-icon>label</mat-icon>
+                </button>
+                <a 
+                    matListItemTitle 
+                    routerLink="./listado"
+                >
+                    Listado de Heroes
+                </a>
+            </mat-list-item>
+
+            <mat-list-item
+                (click)="sidenav.toggle()"
+            >
+                <button mat-icon-button
+                    matListItemMeta
+                >
+                   <mat-icon>add</mat-icon>
+                </button>
+                <a 
+                    matListItemTitle 
+                    routerLink="./agregar"
+                >
+                    Añadir Héroe
+                </a>
+            </mat-list-item>
+
+            <mat-list-item
+                (click)="sidenav.toggle()"
+            >
+                <button mat-icon-button
+                    matListItemMeta
+                >
+                <mat-icon>search</mat-icon>
+                </button>
+                <a 
+                    matListItemTitle 
+                    routerLink="./buscar"
+                >
+                    Buscar Héroe
+                </a>
+            </mat-list-item>
+
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-toolbar
+        class="space-between"
+    >
+        <button 
+            mat-icon-button
+            (click)="sidenav.toggle()"
+        >
+            <mat-icon>menu</mat-icon>
+        </button>
+        <button
+            mat-button
+        >
+            Logout
+        </button>
+    </mat-toolbar>
+
+    <div
+        class="container"
+    >
+        <router-outlet></router-outlet>
+
+    </div>
+
+</mat-sidenav-container>

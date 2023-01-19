@@ -1,0 +1,57 @@
+.buscar-container{
+    box-shadow: 0 6px 20px rgb(212, 212, 212);
+    background-color: rgb(248, 248, 248);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    min-height: 600px;
+    width: 80%;
+}
+
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-child{
+    width: 50%;
+}
+
+.img-heroe{
+    width: 100%;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .flex-child {
+        width: 100%;
+    }
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+.error-p{
+    color: red;
+    font-weight: 700;
+}
