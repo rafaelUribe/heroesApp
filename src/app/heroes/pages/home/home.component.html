@@ -78,11 +78,20 @@
         >
             <mat-icon>menu</mat-icon>
         </button>
-        <button
-            mat-button
-        >
-            Logout
-        </button>
+
+        <div>
+            <span>
+                {{auth.usuario}}
+            </span>
+    
+            <button
+                mat-button
+                (click)="logout()"
+            >
+                Logout
+            </button>
+        </div>
+
     </mat-toolbar>
 
     <div
