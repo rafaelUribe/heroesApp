@@ -9,14 +9,6 @@
     width: 80%;
 }
 
-.display-flex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-child{
-    width: 50%;
-}
 
 .img-heroe{
     width: 100%;
@@ -25,10 +17,4 @@
 .buttons-container{
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 600px) {
-    .flex-child {
-        width: 100%;
-    }
 }
