@@ -10,14 +10,14 @@ import { AuthService } from 'src/app/auth/services/auth.service';
 })
 export class HomeComponent {
 
-  get auth(): Auth{
-    return this.authService.auth
-  }
-
   constructor(
     private router: Router,
     private authService: AuthService,
   ) {}
+
+  get auth(): Auth{
+    return this.authService.auth
+  }
 
   logout(){
 
